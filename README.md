@@ -63,7 +63,15 @@ from aritmatika import pajak
 ppn = pajak.ppn(1000000)
 print(f"PPN: {ppn}")
 
-# Menghitung PPH
+# Total bayar PPN
+ppn = pajak.total_bayar(1000000)
+print(f"Harga total setelah PPN: {ppn}")
+
+# Menghitung PBB
+pbb = pajak.pbb(1200000)
+print(f"PBB: {pbb}")
+
+# Menghitung PPh
 pph = pajak.hitung_pph(120000000, 'lajang', 0)
 print(f"PPH: {pph}")
 ```
@@ -183,6 +191,20 @@ print(f"persentase kerugian: {persen_rugi}%")
   - `transaksi` (*float*): Nilai transaksi.
   - `tarif_ppn` (*float*, opsional): Tarif PPN (default 11% atau 0.11).
 - **Return**: Nilai PPN.
+
+#### `total_bayar(transaksi, tarif_ppn=0.11)`
+- **Deskripsi**: Menghitung total yang harus dibayar setelah PPN.
+- **Parameter**:
+  - transaksi (float): Jumlah transaksi yang dikenakan PPN
+  - tarif_ppn (float): tarif PPN (deafult 11%)
+- **Return**: jumlah total PPN yang harus dibayarkan.
+
+#### `pbb(njop, persen_pbb=0.5)`
+- **Deskripsi**: Menghitung Pajak Bumi dan Bangunan (PBB).
+- **Parameter**:
+  - njop (float): Nilai Jual Objek Pajak
+  - persen_pbb (float): Presentase tarif PBB (deafult 0.5%)
+**Return**: Nilai PBB yang harus dibayar
 
 ##### `hitung_pph(gaji_tahunan, status, tanggungan)`
 - **Deskripsi**: Menghitung Pajak Penghasilan (PPH) berdasarkan gaji tahunan, status, dan tanggungan.
