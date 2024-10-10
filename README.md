@@ -1,4 +1,4 @@
-# Aritamtika
+# Aritmatika
 
 Aritmatika adalah package Python yang berfungsi untuk menyelesaikan masalah aritmatika sosial seperti untung dan rugi, bunga, pajak, diskon dan rabat, serta bruto, netto, dan tara.
 
@@ -6,7 +6,7 @@ Aritmatika is a Python Package for dealing with social arithmetic problems such 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install aritmatika.
 
 ```bash
 pip install aritmatika
@@ -29,6 +29,15 @@ print(f"Gaji bersih: {gaji_bersih}")
 # Menghitung gaji lembur
 gaji_lembur = gaji.hitung_gaji_lembur(5, 75000)
 print(f"Gaji lembur: {gaji_lembur}")
+
+# Menghitung total gaji
+total_gaji = gaji.hitung_total_gaji(1000000, 200000, 500000)
+print(f"Total gaji karyawan: {total_gaji}")
+
+# Menghitung rata-rata gaji
+list_gaji = [5000000, 6000000, 4500000, 5500000]
+rata_rata_gaji = gaji.hitung_rata_rata_gaji(list_gaji)
+print(f"Rata-rata gaji karyawan: {rata_rata_gaji}")
 ```
 
 #### 2. Fungsi Bruto-Tara-Netto
@@ -135,6 +144,20 @@ print(f"persentase kerugian: {persen_rugi}%")
   - `jam_lembur` (*float*): Jumlah jam lembur.
   - `tarif_lembur` (*float*): Tarif lembur per jam.
 - **Return**: Total gaji lembur.
+
+##### `hitung_total_gaji(gaji_pokok: float, gaji_lembur: float, tunjangan: float)`
+- **Deskripsi**: Menghitung total gaji berdasarkan gaji pokok, gaji lembur, dan tunjangan.
+- **Parameter**:
+  - `gaji_pokok` (*float*): Gaji pokok.
+  - `gaji_lembur` (*float*): Gaji lembur.
+  - `tunjangan` (*float*): Tunjangan.
+- **Return**: Total gaji.
+
+##### `hitung_rata_rata_gaji(list_gaji: list)`
+- **Deskripsi**: Menghitung rata-rata gaji berdasarkan list gaji.
+- **Parameter**:
+  - `list_gaji` (*list*): List gaji.
+- **Return**: Rata-rata gaji.
 
 #### 2. Fungsi Bruto-Tara-Netto
 
