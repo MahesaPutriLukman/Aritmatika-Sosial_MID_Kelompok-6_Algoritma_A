@@ -231,10 +231,17 @@ print(f"persentase kerugian: {persen_rugi}%")
 #### 6. Fungsi Untung & Rugi
 
 ##### `hitung_untung(harga_beli, harga_jual)`
-- **Deskripsi**: Menghitung keuntungan dari transaksi jual beli.
+- **Deskripsi**: Menghitung keuntungan dari suatu transaksi.
 - **Parameter**:
-  - `harga_beli` (*float*): Harga beli barang.
-  - `harga_jual` (*float*): Harga jual barang.
+  - `harga_beli` (*int*): Harga beli barang.
+  - `harga_jual` (*int*): Harga jual barang.
+- **Return**: Keuntungan yang diperoleh.
+
+##### `hitung_rugi(harga_beli, harga_jual)`
+- **Deskripsi**: Menghitung kerugian dari suatu transaksi.
+- **Parameter**:
+  - `harga_beli` (*int*): Harga beli barang.
+  - `harga_jual` (*int*): Harga jual barang.
 - **Return**: Keuntungan yang diperoleh.
 
 ##### `persentase_untung(harga_beli, harga_jual)`
@@ -243,6 +250,14 @@ print(f"persentase kerugian: {persen_rugi}%")
   - `harga_beli` (*float*): Harga beli barang.
   - `harga_jual` (*float*): Harga jual barang.
 - **Return**: Persentase keuntungan.
+
+##### `persentase_rugi(harga_beli, harga_jual)`
+- **Deskripsi**: Menghitung persentase kerugian.
+- **Parameter**:
+  - `harga_beli` (*float*): Harga beli barang.
+  - `harga_jual` (*float*): Harga jual barang.
+- **Return**: Persentase kerugian.
+
 
 ## Contributing
 
