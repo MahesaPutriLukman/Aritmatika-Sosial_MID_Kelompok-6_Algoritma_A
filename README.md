@@ -96,9 +96,18 @@ from aritmatika import untung_rugi
 untung = untung_rugi.hitung_untung(10000, 15000)
 print(f"Keuntungan: {untung}")
 
+# Menghitung rugi
+rugi = untung_rugi.hitung_rugi(10000, 15000)
+print(f"keuntungan: {untung}")
+
 # Menghitung persentase keuntungan
 persen_untung = untung_rugi.persentase_untung(10000, 15000)
 print(f"Persentase keuntungan: {persen_untung}%")
+
+# Menghitung persentase kerugian
+persen_rugi = untung_rugi.persentase_rugi(10000, 15000)
+print(f"persentase kerugian: {persen_rugi}%")
+
 ```
 ## Dokumentasi Fungsi
 
