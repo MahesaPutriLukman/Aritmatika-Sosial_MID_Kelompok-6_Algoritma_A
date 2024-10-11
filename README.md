@@ -71,7 +71,7 @@ print(f"PPN: {ppn}")
 ppn = pajak.total_bayar(1000000)
 print(f"Harga total setelah PPN: {ppn}")
 
-#Menghitung NJKP
+# Menghitung NJKP
 njkp = pajak.njkp(1200000)
 print(f"NJKP: {njkp}")
 
@@ -112,8 +112,8 @@ total_setelah_rabat = rabat_diskon.hitung_rabat(50000, 10, 5)
 print(f"Total setelah rabat: {total_setelah_rabat}")
 
 # Menghitung Persen Diskon
- persen_diskon = rabat_diskon.hitung_persen_diskon(20000, 19000)
-    print(f"Persentase diskon: {persen_diskon}%")
+persen_diskon = rabat_diskon.hitung_persen_diskon(20000, 19000)
+print(f"Persentase diskon: {persen_diskon}%")
 ```
 
 #### 6. Fungsi Untung dan Rugi
@@ -218,7 +218,7 @@ print(f"persentase kerugian: {persen_rugi}%")
   - tarif_ppn (float): tarif PPN (deafult 11%)
 - **Return**: jumlah total PPN yang harus dibayarkan.
 
-### `def njkp(njop)`
+### `njkp(njop)`
 - **Deskripsi**: Menghitung NJKP untuk dipakai menghitung PBB.
 - **Parameter**:
   - njop (float): Nilai jual Objek Pajak
