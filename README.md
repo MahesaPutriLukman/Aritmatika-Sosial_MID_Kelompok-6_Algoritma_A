@@ -218,7 +218,7 @@ print(f"persentase kerugian: {persen_rugi}%")
   - tarif_ppn (float): tarif PPN (deafult 11%)
 - **Return**: jumlah total PPN yang harus dibayarkan.
 
-### `njkp(njop)`
+#### `njkp(njop)`
 - **Deskripsi**: Menghitung NJKP untuk dipakai menghitung PBB.
 - **Parameter**:
   - njop (float): Nilai jual Objek Pajak
@@ -274,7 +274,7 @@ print(f"persentase kerugian: {persen_rugi}%")
   - `jumlah_barang` (*int*): Jumlah barang.
   - `rabat_persen` (*float*): Persentase rabat.
 - **Return**: Total harga setelah rabat.
-- 
+  
 ##### 'hitung_persen_diskon(harga_awal, harga_setelah_diskon)'
 - **Deskripsi**: Menghitung Persentase Diskon
 - **Parameter**:
