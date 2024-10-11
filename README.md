@@ -49,6 +49,10 @@ from aritmatika import bruto_tara_netto
 bruto = bruto_tara_netto.hitung_bruto(500, 50)
 print(f"Bruto: {bruto}")
 
+# Menghitung tara
+tara = bruto_tara_netto.hitung_tara(550, 500)
+print(f"Tara: {tara}")
+
 # Menghitung netto
 netto = bruto_tara_netto.hitung_netto(550, 50)
 print(f"Netto: {netto}")
@@ -190,6 +194,13 @@ print(f"persentase kerugian: {persen_rugi}%")
   - `bruto` (*float*): Berat kotor suatu barang.
   - `tara` (*float*): Berat kemasan barang.
 - **Return**: Berat netto barang.
+
+##### `hitung_tara(bruto, netto)`
+- **Deskripsi**: Menghitung tara dari bruto dan netto.
+- **Parameter**:
+  - `bruto` (*float*): Berat kotor suatu barang.
+  - `netto` (*float*): Berat bersih suatu barang.
+- **Return**: Berat tara barang.
 
 #### 3. Fungsi Pajak
 
