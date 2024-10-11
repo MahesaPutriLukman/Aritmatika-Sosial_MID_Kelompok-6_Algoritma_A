@@ -67,6 +67,10 @@ print(f"PPN: {ppn}")
 ppn = pajak.total_bayar(1000000)
 print(f"Harga total setelah PPN: {ppn}")
 
+#Menghitung NJKP
+njkp = pajak.njkp(1200000)
+print(f"NJKP: {njkp}")
+
 # Menghitung PBB
 pbb = pajak.pbb(1200000)
 print(f"PBB: {pbb}")
@@ -202,6 +206,12 @@ print(f"persentase kerugian: {persen_rugi}%")
   - transaksi (float): Jumlah transaksi yang dikenakan PPN
   - tarif_ppn (float): tarif PPN (deafult 11%)
 - **Return**: jumlah total PPN yang harus dibayarkan.
+
+### `def njkp(njop)`
+- **Deskripsi**: Menghitung NJKP untuk dipakai menghitung PBB.
+- **Parameter**:
+  - njop (float): Nilai jual Objek Pajak
+- **Return** Nilai jual kena pajak.
 
 #### `pbb(njop, persen_pbb=0.5)`
 - **Deskripsi**: Menghitung Pajak Bumi dan Bangunan (PBB).
