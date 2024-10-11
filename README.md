@@ -104,7 +104,7 @@ total_setelah_rabat = rabat_diskon.hitung_rabat(50000, 10, 5)
 print(f"Total setelah rabat: {total_setelah_rabat}")
 
 # Menghitung Persen Diskon
- persen_diskon = hitung_persen_diskon(20000, 19000)
+ persen_diskon = rabat_diskon.hitung_persen_diskon(20000, 19000)
     print(f"Persentase diskon: {persen_diskon}%")
 ```
 
